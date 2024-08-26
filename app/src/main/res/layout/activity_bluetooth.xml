@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/skyblue"
+    tools:context=".BluetoothActivity">
+
+
+    <TextView
+        android:id="@+id/connectname"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="연결 기기 명"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="주소"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/nowstate"
+            android:layout_width="600px"
+            android:layout_height="600px"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bluetooth" />
+
+
+        <TextView
+            android:id="@+id/state_eval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:text="탭해서 블루투스 연결"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    // 2번칸
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/edit_round"
+        android:orientation="horizontal">
+        //pm2.5
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slat"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slon"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="지금 강수량"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/pm25image"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/smile" />
+
+            <TextView
+                android:id="@+id/pm25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="PM2.5"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="날씨"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </LinearLayout>
+        //pm10
+
+
+
+    </LinearLayout>
+
+
+    //맨아래 고정 버튼들
+
+
+
+
+
+
+</LinearLayout>

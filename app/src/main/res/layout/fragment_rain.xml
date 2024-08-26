@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/color2"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="10dp"
+    tools:context=".fragment_rain"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To: "
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailAddress"
+        android:layout_marginHorizontal="16dp"
+        android:hint="kingsmanusa2022@gmail.com"
+        android:text="kingsmanusa2022@gmail.com"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subject"
+        android:layout_marginHorizontal="16dp"
+        android:hint="subject"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_marginHorizontal="16dp"
+        android:lines="10"
+        android:gravity="start"
+        android:hint="Type your message here....."/>
+
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="26dp"
+        android:text="SEND"
+        android:textSize="26dp"/>
+
+</LinearLayout>
